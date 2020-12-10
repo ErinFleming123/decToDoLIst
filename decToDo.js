@@ -11,10 +11,7 @@ document.getElementById("addListName").addEventListener("click", addListTitle)
       
       
 
-      let deleteListBtn = document.createElement("BUTTON")
-      deleteListBtn.innerHTML = "Delete List"
-      //let deleteListBtn
-      //let deleteListBtn.innerHTML = `<button button type="button">Delete List</button>`
+      
       let addTaskBtn = document.createElement("Button")
       addTaskBtn.innerHTML = "Add Task"
       let textInput = document.getElementById("listName")
