@@ -1,21 +1,44 @@
 
+let newListName
 document.getElementById("addListName").addEventListener("click", addListTitle)
 
 
 
+
   function addListTitle() {
+
+
     
-      let div = document.createElement("div")
-      let p1 = document.createElement("p")
-      let p2 = document.createElement("p")
+
+    let div = document.createElement("div")
+    let p1 = document.createElement("p")
+    let p2 = document.createElement("p")
+    let addTaskBtn = document.createElement("BUTTON")
+    addTaskBtn.innerHTML = "Add Task"
+
+  
+    
+    
+    
+      
+      let textInput = document.getElementById("listName")
+      let newListName = textInput.value
+
+      if (newListName !=="") {
+
+      
+  
       
       
 
       
-      let addTaskBtn = document.createElement("Button")
-      addTaskBtn.innerHTML = "Add Task"
-      let textInput = document.getElementById("listName")
-      let newListName = textInput.value
+      
+      
+        
+        
+
+      
+
       p1.innerHTML = `${newListName}<button type="button" onclick="deleteList()">Delete List</button>`
       let taskInputBox = `<form><input type = 'text' size = '40' placeholder= 'Write new task here'><button type="button" onclick = "addTask()">Add Task</button></form> `
     
@@ -29,6 +52,11 @@ document.getElementById("addListName").addEventListener("click", addListTitle)
 
       textInput.value = ""
 
+      } else {
+        alert("Please add a new list name")
+      }
+    
+
       
 
       
@@ -37,20 +65,31 @@ document.getElementById("addListName").addEventListener("click", addListTitle)
       
     
   }
+
+  function deleteList() {
+    //alert("hi!")
+    
+    
+      
+  
+
+    
+
+  }
+  
 
   function addTask() {
     
-    alert("Hi!")
+    //alert("Hi!")
 
   }
 
   
-
-  function deleteList() {
-    alert("hi!")
-
-  }
   
+
+  
+
+
 
 
 //document.getElementById("addListName").addEventListener("click", addListTitle)
